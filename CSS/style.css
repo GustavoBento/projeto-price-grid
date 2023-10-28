@@ -18,13 +18,16 @@ body {
 
 .container {
     display: flex;
+    justify-content: center;
+    align-content: center;
     flex-direction: column;
     width: 80%;
     margin: 20px auto;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .conteudo_principal {
+    border-radius:5px 5px 0px 0px;
     background-color: white;
     padding: 20px 10px;
 }
@@ -98,6 +101,7 @@ body {
 
 .conteudo_final {
     padding: 20px 10px;
+    border-radius: 0 0 5px 5px;
     background-color: var(--cor-de-fundo-terciaria);
 }
 
@@ -119,14 +123,17 @@ body {
     }
 
     .conteudo_principal {
-        width: 93%;
+        flex: 100%;
     }
 
     .conteudo_plano {
-        width: 45%;
+        flex: 30%;
+        text-align: center;
+        
     }
 
     .conteudo_final {
-        width: 45%;
+        flex: 30%;
+        text-align: center;
     }
 }
