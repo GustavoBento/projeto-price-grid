@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500&display=swap');
+
+:root {
+    --font-principal: 'Montserrat', sans-serif;
+    --cor-de-fundo: #F0F0F0;
+    --cor-de-fundo-secundaria: #009b79;
+    --cor-de-fundo-terciaria: #18ae8b;
+    --cor-verde-claro: rgb(43, 207, 28);
+}
+
+body {
+    font-family: var(--font-principal);
+    background-color: var(--cor-de-fundo);
+    background-size: cover;
+    width: 95vw;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+.conteudo_principal {
+    background-color: white;
+    padding: 20px 10px;
+}
+
+.conteudo_principal_titulo {
+    font-weight: bold;
+    font-size: 18px;
+    color: var(--cor-de-fundo-secundaria);
+    margin: 10px 0px;
+}
+
+.conteudo_principal_subtitulo {
+    color: var(--cor-verde-claro);
+    font-weight: bold;
+    font-size: 12px;
+    margin: 10px 0px;
+}
+
+.conteudo_principal_texto {
+    font-size: 10px;
+    color: gray;
+    text-align: justify;
+    line-height: 2em;
+}
+
+.conteudo_plano {
+    background-color: var(--cor-de-fundo-secundaria);
+    padding: 20px 10px;
+}
+
+.conteudo_plano_subtitulo {
+    color: white;
+    font-size: 15px;
+    margin: 10px 0px;
+}
+
+.conteudo_plano_texto {
+    color: rgba(66, 63, 63, 0.644);
+    margin: 20px 0px;
+}
+
+.conteudo_plano_texto_span {
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    margin-right: 10px;
+}
+
+.conteudo_plano_texto2 {
+    font-size: 11px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.conteudo_plano_btn {
+    background-color: var(--cor-verde-claro);
+    font-size: 18px;
+    color: white;
+    display: block;
+    margin: auto;
+    width: 80%;
+    padding: 15px 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.conteudo_plano_btn:hover {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.conteudo_final {
+    padding: 20px 10px;
+    background-color: var(--cor-de-fundo-terciaria);
+}
+
+.conteudo_final_subtitulo {
+    font-size: 18px;
+    color: white;
+    margin: 20px 0;
+}
+
+.conteudo_final_texto {
+    color: rgba(255, 255, 255, 0.486);
+    margin: 10px 0;
+}
+
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .conteudo_principal {
+        width: 93%;
+    }
+
+    .conteudo_plano {
+        width: 45%;
+    }
+
+    .conteudo_final {
+        width: 45%;
+    }
+}
